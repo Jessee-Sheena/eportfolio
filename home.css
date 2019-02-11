@@ -1,0 +1,123 @@
+﻿header {
+    text-align: center;
+    font-family: 'Emilys Candy', cursive;
+}
+
+    header h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+        color: darkred;
+    }
+
+    header h2 {
+        font-family: 'Srisakdi', cursive;
+        color: #414830;
+        margin-top: 0;
+    }
+
+nav {
+    border-bottom: 2px solid #414830;
+    border-top: 2px solid #414830;
+}
+
+    nav ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+#navBar a {
+    text-decoration: none;
+    color: darkred;
+    font-size: 1.2em;
+}
+
+#logo {
+    display: none;
+}
+
+main {
+    max-width: 95%;
+    margin: 2em auto;
+}
+
+#mainPage {
+    max-width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-items: center;
+}
+
+.homeImg {
+    max-width: 100%;
+}
+
+#searchForm {
+    max-width: 80%;
+    margin: 2em auto;
+    font-size: 2em;
+}
+
+#searches, #keys, #names, #cuisineType, #timeCook, #timePrep, .ingredientsList {
+    font-size: .7em;
+}
+
+#infoDiv {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+#infoTable {
+    max-width: 80%;
+    margin: auto;
+}
+
+.tableData {
+    padding: 1em;
+}
+
+#ingredientList {
+    text-align: left;
+}
+
+.space {
+    margin-left: 2em;
+}
+
+.ingredientSections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.listSection {
+    border: 1px solid darkred;
+    display: grid;
+    grid-template-columns: 1fr 83%;
+    max-width: 60%;
+    margin: auto;
+}
+
+    .listSection img {
+        max-width: 100%;
+        grid-row: span 2;
+    }
+
+.listHeader {
+    background-color: darkred;
+    color: white;
+    margin-top: 0em;
+    padding: .3em 0em 0em 1em;
+}
+
+    .listHeader a {
+        color: white;
+        text-decoration: none;
+    }
+
+.listSection p {
+    padding-left: 1em;
+}
