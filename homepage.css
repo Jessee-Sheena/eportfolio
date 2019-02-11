@@ -48,6 +48,9 @@ img {
     justify-self: center;
     
 }
+#assignments h1 {
+    grid-column: span 3;
+}
 #quiz {
     grid-column: span 3;
    }
@@ -77,6 +80,6 @@ fieldset {
         padding: 5px;
         text-align: center
     }
-    footer {
+footer {
         text-align: center;
     }
