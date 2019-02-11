@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale =1, maximum-scale=1" />
+    <title>Storm Center Weather Page</title>
+    <meta name="description" content=" this page contains a form that can be filled out with local storm information.
+          Submitting your storm helps to provide information to people in your community." />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/stormcentersmall.css" />
+    <link rel="stylesheet" href="styles/stormcenterlarge.css" />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7cMerriweather%7cVolkhov" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="logo" />
+        <div class="headText">
+            <h1>Come Rain or Shine Weather</h1>
+            <div class="subHead">your one stop for local weather and news </div>
+        </div>
+        <div id="conditions">
+            <img src="images/conditions1.png" alt=" current conditions" />
+            <p>Rainy</p>
+        </div>
+    </header>
+    <nav id="headerNav">
+        <div id="menubar">
+            <button onclick="toggleMenu()" id="navButton">&#9776;</button>
+            <h4 id="menu">Menu</h4>
+        </div>
+        <ul id="navList" class="hide">
+            <li><a id="visitedHome" href="homepage.html">Home</a></li>
+            <li><a id="visitedPreston" href="preston.html">Preston</a></li>
+            <li><a id="visitedSoda" href="sodasprings.html">Soda Springs</a></li>
+            <li><a id="visitedFish" href="fishhaven.html">Fish Haven</a></li>
+            <li><a id="visitedStorm" href="stormcenter.html">Storm Center</a></li>
+            <li><a id="visitedGallery" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Share A Storm</h1>
+        <form name="stormSubmission" action="thanks.html" method="get" id="form1">
+            <label> Full Name:*<input type="text" name="name" pattern="[A-Za-z]\s\[A-Za-z]{5,}" required /></label>
+            <label>Email: <input type="email" name="email" placeholder="email@gmail.com" /></label>
+            <label>Phone Number:* <input type="tel" name="phone" required /></label>
+            <label>Zip Code:* <input type="number" name="zipcode" required /></label>
+            <label>Storm Date: <input type="date" name="stormdate" /></label>
+            <label>Storm Type: <input list="storms" name="storm" /></label>
+            <datalist id="storms">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist>
+            <label>Storm Severity: (1 to 10)<input id="slider" type="range" min="1" max="10" name="severity"></label>
+            <label>
+                Storm Region: <select name="region">
+                    <option>Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+            </label>
+            <div id="radiobutton">
+                <span>User in Danger:</span>
+                <label><input type="radio" name="danger" value="yes" />Yes</label>
+                <label><input type="radio" name="danger" value="no" />No</label>
+                <label><input type="radio" name="danger" value="maybe" />Maybe</label>
+            </div>
+
+            <label>Additional Information or Comments:<textarea name="comments" rows="7"></textarea></label>
+            <input id="submitbutton" type="submit" name="submit" value="Share My Storm" />
+        </form>
+
+        <footer>
+            <div>
+                <h3>Contact Information</h3>
+                <p> Address: 1234 S. Main St<br /> Phone:(123)204-1234 <br /> email: emailme@yahoo.com <br /></p>
+                <p> Weather information provided by www.openweathermap.org</p>
+            </div>
+
+            <nav id="footerNav">
+                <ul>
+                    <li>&copy;  Sheena Jessee</li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li id="date"></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+
+</body>
+</html>

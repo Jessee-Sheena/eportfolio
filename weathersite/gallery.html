@@ -1,0 +1,117 @@
+﻿    <!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale =1, maximum-scale=1" />
+        <title>Gallery Page</title>
+        <meta name="description" content="Users can view the image gallery that contains images of local storms that have been
+          submitted by residents of the communitites. " />
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/gallerysmall.css" />
+        <link rel="stylesheet" href="styles/gallerylarge.css" />
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7cMerriweather%7cVolkhov" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="images/logo.png" alt="logo" />
+            <div class="headText">
+                <h1>Come Rain or Shine Weather</h1>
+                <div class="subHead">your one stop for local weather and news </div>
+            </div>
+            <div id="conditions">
+                <img src="images/conditions1.png" alt=" current conditions" />
+                <p>Rainy</p>
+            </div>
+        </header>
+        <nav id="headerNav">
+            <div id="menubar">
+                <button onclick="toggleMenu()" id="navButton">&#9776;</button>
+                <h4 id="menu">Menu</h4>
+            </div>
+            <ul id="navList" class="hide">
+                <li><a id="visitedHome" href="homepage.html">Home</a></li>
+                <li><a id="visitedPreston" href="preston.html">Preston</a></li>
+                <li><a id="visitedSoda" href="sodasprings.html">Soda Springs</a></li>
+                <li><a id="visitedFish" href="fishhaven.html">Fish Haven</a></li>
+                <li><a id="visitedStorm" href="stormcenter.html">Storm Center</a></li>
+                <li><a id="visitedGallery" href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Image Gallery</h1>
+            <div id="wrapper">
+                <div class="imagewrapper">
+                    <picture>
+                        <source media="(min-width: 64em)" srcset="images/lightningmedium.jpg" class="galleryimg">
+                        <source media="(max-width: 64em)" srcset="images/lightningsmall.jpg" class="galleryimg">
+                        <img src="images/sunset.jpg" alt="sunset" style="width:auto;" class="galleryimg">
+                    </picture>
+                    <p> lightning streaks across the sky in a dance of light and beauty in this captivating image from a lightning storm. </p>
+                </div>
+                <div class="imagewrapper">
+                    <picture>
+                        <source media="(min-width: 64em)" srcset="images/beautifulskymedium.jpg" class="galleryimg">
+                        <source media="(max-width: 64em)" srcset="images/beautifulskysmall.jpg" class="galleryimg">
+                        <img src="images/sunset.jpg" alt="sunset" style="width:auto;" class="galleryimg">
+                    </picture>
+                    <p> The light plays peek-a-boo through the clouds in the beautiful image of a semi-cloudy sky.</p>
+                </div>
+                <div class="imagewrapper">
+                    <picture>
+                        <source media="(min-width: 64em)" srcset="images/rainbowmedium.jpg" class="galleryimg">
+                        <source media="(max-width: 64em)" srcset="images/rainbowsmall.jpg" class="galleryimg">
+                        <img src="images/sunset.jpg" alt="sunset" style="width:auto;" class="galleryimg">
+                    </picture>
+                    <p>A double rainbow arcs across the sky, providing a stunning backdrop for this verdant field.</p>
+                </div>
+                <div class="imagewrapper">
+
+                    <picture>
+                        <source media="(min-width: 64em)" srcset="images/wintersunsetmedium.jpg" class="galleryimg">
+                        <source media="(max-width: 64em)" srcset="images/wintersunsetsmall.jpg" class="galleryimg">
+                        <img src="images/sunset.jpg" alt="sunset" style="width:auto;" class="galleryimg">
+                    </picture>
+                    <p>The sun peeks through the trees and makes the snow glisten in this lovely winter sunset.</p>
+                </div>
+                <div class="imagewrapper">
+                    <picture>
+                        <source media="(min-width: 64em)" srcset="images/snowontreesmedium.jpg" class="galleryimg">
+                        <source media="(max-width: 64em)" srcset="images/snowontreesmall.jpg" class="galleryimg">
+                        <img src="images/sunset.jpg" alt="sunset" style="width:auto;" class="galleryimg">
+                    </picture>
+                    <p>Snow frosts the trees in an enchanting display of winter magic.</p>
+                </div>
+                <div class="imagewrapper">
+                    <picture>
+                        <source media="(min-width: 64em)" srcset="images/stormmedium.jpg" class="galleryimg">
+                        <source media="(max-width: 64em)" srcset="images/stormsmall.jpg" class="galleryimg">
+                        <img src="images/sunset.jpg" alt="sunset" style="width:auto;" class="galleryimg">
+                    </picture>
+                    <p>This storm captured in the distance is both menacing and beautiful at once.</p>
+                </div>
+
+            </div>
+
+            <footer>
+                <div>
+                    <h3>Contact Information</h3>
+                    <p> Address: 1234 S. Main St<br /> Phone:(123)204-1234 <br /> email: emailme@yahoo.com <br /></p>
+                </div>
+
+                <nav id="footerNav">
+                    <ul>
+                        <li>&copy;  Sheena Jessee</li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li id="date"></li>
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+        <script type="text/javascript" src="scripts/hamburger.js"></script>
+        <script type="text/javascript" src="scripts/currentdate.js"></script>
+
+
+    </body>
+</html>

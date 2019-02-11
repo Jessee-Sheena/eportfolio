@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale =1, maximum-scale=1" />
+    <title>Fish Haven Idaho Weather Page</title>
+    <meta name="description" content="a weather site with local weather and information about the town" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/fishhavensmall.css" />
+    <link rel="stylesheet" href="styles/fishhavenmedium.css" />
+    <link rel="stylesheet" href="styles/fishhavenlarge.css" />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7cMerriweather%7cVolkhov" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="logo" />
+        <div class="headText">
+            <h1>Come Rain or Shine Weather</h1>
+            <div class="subHead">your one stop for local weather and news </div>
+        </div>
+        <div id="conditions">
+        </div>
+    </header>
+
+    <main>
+        <nav id="headerNav">
+            <div id="menubar">
+                <button onclick="toggleMenu()" id="navButton">&#9776;</button>
+                <h4 id="menu">Menu</h4>
+            </div>
+
+            <ul id="navList" class="hide">
+                <li><a id="visitedHome" href="homepage.html">Home</a></li>
+            <li><a id="visitedPreston" href="preston.html">Preston</a></li>
+            <li><a id="visitedSoda" href="sodasprings.html">Soda Springs</a></li>
+            <li><a id="visitedFish" href="fishhaven.html">Fish Haven</a></li>
+            <li><a id="visitedStorm" href="stormcenter.html">Storm Center</a></li>
+            <li><a id="visitedGallery" href="gallery.html">Gallery</a></li>
+            </ul>
+
+        </nav>
+        <div class="main">
+            <h2>Fish Haven</h2>
+
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 500px)" srcset="images/fishhavenhero.jpg">
+                    <source media="(max-width: 500px)" srcset="images/fishhavenherosmall.jpg">
+                    <img src="images/fishhavenhero.jpg" alt="country setting" style="width:auto;">
+                </picture>
+
+                <section class="weathersummary">
+                    <h3>Weather Summary</h3>
+                    <div class="weatherdetails">
+                        <p>Currently: <span id="outlook"></span></p>
+                        <p>Temperature: <span id="temp"></span></p>
+                        <p>Humidity: <span id="humid"></span></p>
+                        <p>Precipitation: <span id="precipitation"></span></p>
+                        <p>Wind Speed: <span id="wind"></span></p>
+                        <p>Wind Chill: <span id="windoutput"></span></p>
+                    </div>
+                </section>
+            </div>
+
+            <section id="forcast">
+                <h3> 5 Day Forcast</h3>
+                <table>
+                    <thead>
+                        <tr id="days">
+                            <th>Day</th>
+                            <th id="wday0"></th>
+                            <th id="wday1"></th>
+                            <th id="wday2"></th>
+                            <th id="wday3"></th>
+                            <th id="wday4"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="values">
+                            <th>Forecast</th>
+                            <td id="day0"></td>
+                            <td id="day1"></td>
+                            <td id="day2"></td>
+                            <td id="day3"></td>
+                            <td id="day4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <div>
+                    <h2>Article</h2>
+                    <h4>By:  Staff Writer</h4>
+                    <h4>Posted: Oct 16, 2018 12:05 PM MDT</h4>
+                </div>
+                <img src="https://s3-assets.eastidahonews.com/wp-content/uploads/2018/11/14170828/Unit-78-Buck-Shot-and-Left-to-Waste_-Mill-Canyon-2018.jpg" alt="poached deer" />
+                <p>
+                    The Idaho Department of Fish and Game is seeking information regarding a dead buck discovered just off
+                    Miles Canyon Road (also known as Mill Canyon Road) near Liberty, Idaho (in Bear Lake County), in Game Management Unit 78.
+                    The buck, a large 4×5 mule deer, was shot and left to waste on the south side of the road, approximately 1.2 miles west of
+                    the Lanark Road turnoff. The investigation into this incident was initiated by Fish and Game after a caller submitted information
+                    to Citizens Against Poaching (CAP) Nov. 9. Any information about this buck, including photographs of the deer alive, should be
+                    forwarded to Fish and Game Senior Conservation Officer, Cameron Sena, at (208) 576-9067. Anyone with information about this incident
+                    or other wildlife violations can also call the CAP hotline, (800) 632-5999, 24 hours a day, seven days a week. Callers can remain
+                    anonymous, and cash rewards are available to those who provide information leading to the citation of suspected wildlife law violators.
+                    <a href="https://www.eastidahonews.com/2018/11/buck-shot-left-to-waste-in-bear-lake-county/">Read More</a>
+                </p>
+
+            </article>
+
+
+        </div>
+        <footer>
+            <div>
+                <h3>Contact Information</h3>
+                <p> Address: 1234 S. Main St<br /> Phone:(123)204-1234 <br /> email: emailme@yahoo.com <br /></p>
+                <p> Weather information provided by www.openweathermap.org</p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJvEHXAmkI0UaSily_3VmOzeWI2E12CW6Qgnwat0mrNbcAWsJig" alt="map" />
+            <nav id="footerNav">
+                <ul>
+                    <li>&copy;  Sheena Jessee</li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li id="date"></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/fishhavenweather.js"></script>
+</body>
+</html>

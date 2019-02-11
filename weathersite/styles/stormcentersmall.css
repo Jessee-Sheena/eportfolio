@@ -1,0 +1,188 @@
+﻿body {
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    color: #100f0f;
+    background-color: #f8f8f8;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 70%;
+    justify-items: center;
+    align-items: center;
+    background-color: #76923c;
+}
+
+    header > img {
+        width: 80%;
+        height: auto;
+    }
+
+@media only screen and (max-width:903px) {
+    #conditions {
+        display: none
+    }
+}
+
+.headText {
+    text-align: center;
+}
+
+    .headText h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 5.5vw;
+        color: white;
+        margin: 0;
+    }
+
+.subHead {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.5vw;
+    color: #100f0f;
+    font-style: italic;
+}
+
+#headerNav {
+    background-color: #b6dde8;
+    color: #100f0f;
+    font-family: 'Volkhov', serif;
+    box-shadow: 0px 0px 20px 8px #9fc9d4 inset;
+    text-align: center;
+}
+
+#navButton {
+    margin: 2%;
+    display:inline;
+    background: transparent;
+    border: none;
+    font-size: 1.6em;
+    color: #100f0f;
+    vertical-align:middle;
+    
+}
+nav ul.hide {
+    display:none;
+}
+
+#navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    
+}
+    #navList li a {
+        display: block;
+        text-decoration: none;
+        padding: .8rem 2%;
+        color: #100f0f;
+        border-top: 1px solid rgba(0,0,0,0.3);
+        font-size:1.1em;
+    }
+        #navList li a:hover {
+            background-color: rgba(0,0,0,.05)
+        }
+
+#menu {
+    display: inline;
+    margin: 0;
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: #100f0f;
+}
+
+main {
+    background-color: #b6dde8;
+    border: 2px solid #76923c;
+    margin: 4em auto;
+
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+    main h1#thanks {
+        font-size: 4em;
+    }
+
+    main p#thankyou {
+        font-size: 2em;
+        margin-bottom: 4em;
+    }
+form {
+    border: 2px solid #b6dde8;
+    background-color: #215869;
+    margin-bottom: 4em;
+}
+#form1 label, form input, form select, form textarea {
+    display: block;
+    text-align: left;
+    
+    
+}
+#form1 label {
+    color: white;
+    margin: 1.5em;
+}
+#form1 input, form select, form textarea{
+    padding: .5em;
+    width:93%;
+}
+#form1 input#slider {
+    max-width:200px;
+}
+
+#radiobutton label input{
+    display:inline;
+    width: 2em;
+    vertical-align: middle;
+}
+#radiobutton {
+    color:white;
+    text-align:left;
+    
+}
+    #radiobutton span {
+        margin: 1.5em;
+    }
+#submitbutton {
+    background-color:#b6dde8;
+    margin: 1.5em;
+    max-width: 150px;
+}
+footer {
+    background-color: #215869;
+}
+
+    footer div {
+        color: white;
+        padding-top: .5em;
+    }
+
+    footer img {
+        padding: 1em;
+        max-width: 80%;
+    }
+
+#footerNav {
+    background-color: black;
+    color: white;
+    padding: .5em;
+}
+
+    #footerNav li {
+        display: inline;
+        margin: 4%;
+    }
+
+        #footerNav li a {
+            color: white;
+        }
+
+            #footerNav li a:hover {
+                color: #215869
+            }
+
+            #footerNav li a:visited {
+                color: white;
+            }

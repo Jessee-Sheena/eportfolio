@@ -1,0 +1,191 @@
+﻿body {
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    color: #100f0f;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 70%;
+    justify-items: center;
+    align-items: center;
+    background-color: #76923c;
+}
+
+    header > img {
+        width: 80%;
+        height: auto;
+    }
+
+@media only screen and (max-width:903px) {
+    #conditions {
+        display: none
+    }
+}
+
+.headText {
+    text-align: center;
+}
+
+    .headText h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 5.5vw;
+        color: white;
+        margin: 0;
+    }
+
+.subHead {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.5vw;
+    color: #100f0f;
+    font-style: italic;
+}
+
+
+#headerNav {
+    background-color: #b6dde8;
+    color: #100f0f;
+    font-family: 'Volkhov', serif;
+    box-shadow: 0px 0px 20px 8px #9fc9d4 inset;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#navButton {
+    margin: 2%;
+    display: inline;
+    background: transparent;
+    border: none;
+    font-size: 1.6em;
+    color: #100f0f;
+    vertical-align: middle;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+#navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+    #navList li a {
+        display: block;
+        text-decoration: none;
+        padding: .8rem 2%;
+        color: #100f0f;
+        border-top: 1px solid rgba(0,0,0,0.3);
+        font-size: 1.1em;
+    }
+
+        #navList li a:hover {
+            background-color: rgba(0,0,0,.05)
+        }
+#visitedHome {
+    color: #f8f8f8;
+}
+#menu {
+    display: inline;
+    margin: 0;
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: #100f0f;
+}
+
+main {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    font-size: 14px;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 1em;
+}
+
+    #grid section {
+        background-color: #b6dde8;
+        border: 1px solid #215869;
+    }
+
+.towndata {
+    max-width: 90%;
+    margin: 2em auto;
+    background-color: white;
+    -webkit-box-shadow: 10px 9px 21px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 21px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 21px -4px rgba(0,0,0,0.75);
+}
+
+    .towndata h2 {
+        color: #215869;
+        padding: .7em;
+    }
+
+    .towndata img {
+        max-width: 100%;
+    }
+
+@media only screen and (min-width:500px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+}
+
+#grid a {
+    text-decoration: none;
+}
+
+    #grid a:hover {
+        background-color: red;
+    }
+
+footer {
+    background-color: #215869;
+    margin-top: 2em;
+    text-align: center;
+}
+
+    footer div {
+        color: white;
+        padding-top: .5em;
+    }
+
+    footer img {
+        padding: 1em;
+        max-width: 250px;
+    }
+
+#footerNav {
+    background-color: black;
+    color: white;
+    padding: .5em;
+}
+
+    #footerNav li {
+        display: inline;
+        margin: 4%;
+    }
+
+        #footerNav li a {
+            color: white;
+        }
+
+            #footerNav li a:hover {
+                color: #215869
+            }
+
+            #footerNav li a:visited {
+                color: white;
+            }
+#navList li a#visitedHome {
+    background-color: #215869;
+    color: white;
+}

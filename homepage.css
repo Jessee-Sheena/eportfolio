@@ -57,9 +57,20 @@ fieldset {
 #about {
     display:none;
 }
-#pets {
+#classesList {
     display: none;
 }
 #favQuote {
     display: none;
 }
+#classHead {
+    margin-left: 40px;
+}
+#classTable {
+    border:2px solid; 
+    margin-left: 40px;
+}
+    #classTable th, td {
+        padding: 5px;
+        text-align: center
+    }

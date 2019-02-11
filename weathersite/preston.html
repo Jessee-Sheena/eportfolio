@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale =1, maximum-scale=1" />
+    <title>Preston Idaho Weather Page</title>
+    <meta name="description" content="a weather site with local weather and information about the town" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/prestonsmall.css" />
+    <link rel="stylesheet" href="styles/prestonlarge.css" />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7cMerriweather%7cVolkhov" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="logo" />
+        <div class="headText">
+            <h1>Come Rain or Shine Weather</h1>
+            <div class="subHead">your one stop for local weather and news </div>
+        </div>
+        <div id="conditions">
+
+        </div>
+    </header>
+    <nav id="headerNav">
+        <div id="menubar">
+            <button onclick="toggleMenu()" id="navButton">&#9776;</button>
+            <h4 id="menu">Menu</h4>
+        </div>
+        <ul id="navList" class="hide">
+            <li><a id="visitedHome" href="homepage.html">Home</a></li>
+            <li><a id="visitedPreston" href="preston.html">Preston</a></li>
+            <li><a id="visitedSoda" href="sodasprings.html">Soda Springs</a></li>
+            <li><a id="visitedFish" href="fishhaven.html">Fish Haven</a></li>
+            <li><a id="visitedStorm" href="stormcenter.html">Storm Center</a></li>
+            <li><a id="visitedGallery" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/sunset.jpg">
+                <source media="(max-width: 500px)" srcset="images/sunsetsmall.jpg">
+                <img src="images/sunset.jpg" alt="sunset" style="width:auto;">
+            </picture>
+
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <div class="weatherdetails">
+                    <p>Currently: <span id="outlook"></span></p>
+                    <p>Temperature: <span id="temp"></span></p>
+                    <p>Humidity: <span id="humid"></span></p>
+                    <p>Precipitation: <span id="precipitation"></span></p>
+                    <p>Wind Speed: <span id="wind"></span></p>
+                    <p>Wind Chill: <span id="windoutput"></span></p>
+                </div>
+            </section>
+        </div>
+
+        <section id="forcast">
+            <h3> 5 Day Forcast</h3>
+            <table>
+                <thead>
+                    <tr id="days">
+                        <th>Day</th>
+                        <th id="wday0"></th>
+                        <th id="wday1"></th>
+                        <th id="wday2"></th>
+                        <th id="wday3"></th>
+                        <th id="wday4"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="values">
+                        <th>Forecast</th>
+                        <td id="day0"></td>
+                        <td id="day1"></td>
+                        <td id="day2"></td>
+                        <td id="day3"></td>
+                        <td id="day4"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h2>Article</h2>
+            <h4>By:  Staff Writer</h4>
+            <h4>Posted: Oct 16, 2018 12:05 PM MDT</h4>
+            <img src="https://media.localnews8.com/npg-kifi-media-us-east-1/photo/2018/10/16/Preston%20gas%20leak%2010.16.18_1539717017342.png_13609056_ver1.0_640_360.jpg" alt="evacuations lifted after gas leak" />
+            <p>
+                PRESTON, Idaho (KIFI/KIDK) - UPDATE 12:45 p.m. Preston City Chief Mike Peterson reports the evacuations have been lifted.
+                He said a small trackhoe was doing some landscaping in a yard at 262 S 100 E in Preston and hit a gas line.Originally police
+                thought it could be worse because they thought he might have hit a high-pressure gas line, and so they called for an evacuation
+                of homes in a two block radius as a precaution. Officials then discovered it was just a single, low-pressure line that was just
+                a 1 1/2" pipeline that was affecting one home, and evacuations were lifted. Peterson said crews had it pinched off and under
+                control within 30 minutes. They are just working on cleaning it all up. Preston High school is nearby, and the school was
+                notified as a precaution but was not ever evacuated.
+                <a href="https://www.localnews8.com/news/kifi-breaking-news/evacuation-in-place-after-gas-line-rupture/807897005">Read More</a>
+            </p>
+
+        </article>
+
+        <footer>
+            <div>
+                <h3>Contact Information</h3>
+                <p> Address: 1234 S. Main St<br /> Phone:(123)204-1234 <br /> email: emailme@yahoo.com <br /></p>
+            </div>
+            <img src="https://i.nona.net/locmap_PRESTON_-112.04383X41.97639X-111.70783X42.21639.png" alt="map" />
+            <nav id="footerNav">
+                <ul>
+                    <li>&copy;  Sheena Jessee</li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li id="date"></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/prestonweather.js"></script>
+</body>
+</html>

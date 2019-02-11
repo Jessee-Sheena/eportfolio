@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale =1, maximum-scale=1" />
+    <title>Preston Idaho Weather Page</title>
+    <meta name="description" content="a weather site with local weather and information about the town" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/stormcentersmall.css" />
+    <link rel="stylesheet" href="styles/stormcenterlarge.css" />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7cMerriweather%7cVolkhov" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="logo" />
+        <div class="headText">
+            <h1>Come Rain or Shine Weather</h1>
+            <div class="subHead">your one stop for local weather and news </div>
+        </div>
+        <div id="conditions">
+            <img src="images/conditions1.png" alt=" current conditions" />
+            <p>Rainy</p>
+        </div>
+    </header>
+    <nav id="headerNav">
+        <div id="menubar">
+            <button onclick="toggleMenu()" id="navButton">&#9776;</button>
+            <h4 id="menu">Menu</h4>
+        </div>
+        <ul id="navList" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="thanks">Thank You</h1>
+        <p id="thankyou"> Your form submission has been recieved. Thank You for submitting information about a storm. </p>
+
+        <footer>
+            <div>
+                <h3>Contact Information</h3>
+                <p> Address: 1234 S. Main St<br /> Phone:(123)204-1234 <br /> email: emailme@yahoo.com <br /></p>
+            </div>
+            <img src="https://i.nona.net/locmap_PRESTON_-112.04383X41.97639X-111.70783X42.21639.png" alt="map" />
+            <nav id="footerNav">
+                <ul>
+                    <li>&copy;  Sheena Jessee</li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li id="date"></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    
+</body>
+</html>

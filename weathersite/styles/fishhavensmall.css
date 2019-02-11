@@ -1,0 +1,249 @@
+﻿body {
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    color: #100f0f;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 70%;
+    justify-items: center;
+    align-items: center;
+    background-color: #76923c;
+}
+
+    header > img {
+        width: 80%;
+        height: auto;
+    }
+
+@media only screen and (max-width:700px) {
+    #conditions {
+        display: none
+    }
+}
+
+.headText {
+    text-align: center;
+}
+
+    .headText h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 5.5vw;
+        color: white;
+        margin: 0;
+    }
+
+.subHead {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.5vw;
+    color: #100f0f;
+    font-style: italic;
+}
+
+
+
+#headerNav {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #b6dde8;
+    color: #100f0f;
+    font-family: 'Volkhov', serif;
+    box-shadow: 0px 0px 20px 8px #9fc9d4 inset;
+}
+
+#menubar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#navButton {
+    margin: 2%;
+    background: transparent;
+    border: none;
+    font-size: 1.6em;
+    color: #100f0f;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+#navList {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+    #navList li {
+        display: grid;
+        border-top: 1px solid rgba(0,0,0,0.3);
+        padding: .7em;
+        align-items: center;
+    }
+
+        #navList li a {
+            width: 100%;
+            text-decoration: none;
+            color: #100f0f;
+            font-size: 1.1em;
+        }
+
+            #navList li a:hover {
+                background-color: rgba(0,0,0,.05);
+            }
+
+#menu {
+    margin: 0;
+    font-size: 1.2em;
+    padding: .7em 0em;
+    color: #100f0f;
+}
+
+.main {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.hero {
+    position: relative;
+}
+
+    .hero img {
+        max-width: 95%;
+    }
+
+.weathersummary {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    font-size: 14px;
+    max-width: 200px;
+    width: 50%;
+    background-color: rgba(33, 88, 105, 0.80);
+    padding-bottom: 1em;
+}
+
+.weatherdetails p {
+    color: white;
+    margin: 0;
+}
+
+.weatherdetails span {
+    color: #ffff99;
+}
+
+.weathersummary h3 {
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:700px) {
+    #forcast {
+        display: none;
+    }
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    background-color: #b6dde8;
+    margin: 5% auto;
+    max-width: 95%;
+}
+
+@media only screen and (max-width: 500px) {
+    article {
+        margin: 10% auto;
+    }
+}
+
+article div {
+    grid-column-start: 1;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+
+
+article h2 {
+    text-align: left;
+    padding: 1em 0em 0em .5em;
+    margin: 0;
+}
+
+article h4 {
+    margin: 0em 1em;
+    text-align: left;
+}
+
+article img {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 92%;
+    padding: 0em 0.5em;
+}
+
+
+
+article p {
+    text-align: left;
+    padding: 0em 1em 1em 1em;
+    margin: 0;
+}
+
+footer {
+    background-color: #215869;
+    text-align: center;
+}
+
+    footer div {
+        color: white;
+    }
+
+    footer img {
+        padding: 1em;
+        max-width: 250px;
+    }
+
+.clearfix {
+    overflow: auto;
+}
+
+#footerNav {
+    background-color: black;
+    color: white;
+    padding: .5em;
+}
+
+    #footerNav ul {
+        list-style-type: none;
+    }
+
+    #footerNav li {
+        margin: 4%;
+    }
+
+        #footerNav li a {
+            color: white;
+        }
+
+            #footerNav li a:hover {
+                color: #215869
+            }
+
+            #footerNav li a:visited {
+                color: white;
+            }
+#navList li a#visitedFish {
+    background-color: #215869;
+    color: white;
+}
+

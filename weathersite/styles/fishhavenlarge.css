@@ -1,0 +1,131 @@
+﻿@media only screen and (min-width: 904px) {
+
+    header {
+        text-align: center;
+        grid-template-columns: 1fr 55% 1fr;
+    }
+
+        header > img {
+            width: 150px;
+            height: auto;
+           
+        }
+
+    .headText {
+        margin: 2em ;
+    }
+
+        .headText h1 {
+            font-size: 3em;
+        }
+
+    .subHead {
+        font-size: 1.5em;
+    }
+
+    #conditions {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        align-items:center;
+        max-width:150px;
+        padding: .8rem;
+        margin: 1em 0em 1em 0em;
+        color: white;
+        background-color: #b6dde8;
+        border: solid 2px #215869;
+        font-size: 1.1em;
+        box-shadow: 2px 2px 5px 2px #2f3e0f;
+    }
+
+        #conditions img {
+           
+            
+            width: 80px;
+            height: auto;
+        }
+
+        #conditions p {
+           
+            
+            margin: .3em;
+            color: #100f0f;
+        }
+
+    #headerNav {
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        align-items: flex-start;
+        justify-items: center;
+    }
+    nav ul.hide {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #navList {
+        grid-row-start: 1;
+        list-style-type: none;
+        margin: 0;
+        max-width: 60%;
+        padding: .3em;
+    }
+
+        #navList li {
+            border-top: none;
+            border-bottom: none;
+            margin: 0;
+            line-height: 1.3em;
+        }
+
+            #navList li a {
+                text-decoration: none;
+                color: #100f0f;
+                font-family: 'Volkhov', serif;
+                font-size: 1.2em;
+                border-top: none;
+                padding: 0;
+            }
+
+                #navList li a:hover {
+                    background-color: transparent;
+                    color: white;
+                }
+                
+    #menu {
+        display: none;
+    }
+   
+    .main {
+        max-width:900px;
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 2;
+    }
+    #days {
+        border: 2px solid black;
+        border-collapse: collapse
+    }
+    footer {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        min-width: 900px;
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 3;
+    }
+    footer div {
+       
+      
+        color: white;
+    }
+    #footerNav {
+       
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        
+    }
+}
+
+ 

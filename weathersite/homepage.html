@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale =1, maximum-scale=1" />
+    <title>Come Rain or Shine Weather Home Page</title>
+    <meta name="description" content="a weather site with local weather and information about a few small towns
+          in eastern Idaho. contains a storm center reporting form for reporting local weather, and a gallery page to
+          display some of natures greatest weather." />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/homesmall.css" />
+    <link rel="stylesheet" href="styles/homelarge.css" />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7cMerriweather%7cVolkhov" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="logo" />
+        <div class="headText">
+            <h1>Come Rain or Shine Weather</h1>
+            <div class="subHead">your one stop for local weather and news </div>
+        </div>
+        <div id="conditions">
+            <img src="images/conditions1.png" alt=" current conditions" />
+            <p>Rainy</p>
+        </div>
+    </header>
+    <nav id="headerNav">
+        <div id="menubar">
+            <button onclick="toggleMenu()" id="navButton">&#9776;</button>
+            <h4 id="menu">Menu</h4>
+        </div>
+        <ul id="navList" class="hide">
+            <li><a id="visitedHome" href="homepage.html">Home</a></li>
+            <li><a id="visitedPreston" href="preston.html">Preston</a></li>
+            <li><a id="visitedSoda" href="sodasprings.html">Soda Springs</a></li>
+            <li><a id="visitedFish" href="fishhaven.html">Fish Haven</a></li>
+            <li><a id="visitedStorm" href="stormcenter.html">Storm Center</a></li>
+            <li><a id="visitedGallery" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="grid">
+            <section>
+                <a href="fishhaven.html">
+                    <div id="fishhaven" class="towndata">
+                    </div>
+                </a>
+
+            </section>
+            <section>
+                <a href="preston.html">
+                    <div id="preston" class="towndata">
+
+                    </div>
+                </a>
+            </section>
+            <section>
+                <a href="sodasprings.html">
+                    <div id="sodasprings" class="towndata">
+
+                    </div>
+                </a>
+            </section>
+        </div>
+        <footer>
+            <div>
+                <h3>Contact Information</h3>
+                <p> Address: 1234 S. Main St<br /> Phone:(123)204-1234 <br /> email: emailme@yahoo.com <br /></p>
+            </div>
+
+            <nav id="footerNav">
+                <ul>
+                    <li>&copy;  Sheena Jessee</li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li id="date"></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/towndata.js"></script>
+</body>
+</html>

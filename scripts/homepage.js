@@ -9,7 +9,7 @@ $(document).ready(function () {
 	});
 });
 $(document).ready(function () {
-	$("#favPets").click(function () {
-		$('#pets').slideToggle();
+	$("#classesTaken").click(function () {
+		$('#classesList').slideToggle();
 	});
 });
