@@ -42,6 +42,9 @@ img {
 }
 #assignments {
     grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
     justify-self: center;
     
 }
@@ -73,4 +76,7 @@ fieldset {
     #classTable th, td {
         padding: 5px;
         text-align: center
+    }
+    footer {
+        text-align: center;
     }
