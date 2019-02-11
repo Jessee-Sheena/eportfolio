@@ -50,6 +50,7 @@ img {
 }
 #assignments h1 {
     grid-column: span 3;
+    text-align: center;
 }
 #quiz {
     grid-column: span 3;
